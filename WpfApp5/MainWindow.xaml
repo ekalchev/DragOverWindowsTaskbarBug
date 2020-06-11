@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Click="Button_Click" Width="100" Height="100">Open new Window</Button>
+        <TextBlock Text="Steps to reproduce:"/>
+        <TextBlock Text="you should have taskbar grouping/stacking turned off otherwise you will see both windows stacked"/>
+        <TextBlock Text="1. Click the button to open a new window"/>
+        <TextBlock Text="2. Click the new window minimize button"/>
+        <TextBlock Text="3. Drag the rectangle to windows task bar minimized window" />
+        <TextBlock Text="Expected: Minimized window should restore." />
+        <TextBlock Text="Actual: It doesn't restore." />
+        <Border Width="300" Height="300" Background="Red">
+            <TextBlock Text="Drag me to the minimized window taskbar icon. Note you should have taksbar grouping turned off" />
+        </Border>
+    </StackPanel>
+</Window>
